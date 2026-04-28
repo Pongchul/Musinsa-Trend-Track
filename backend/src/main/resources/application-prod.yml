@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://prod-db-host:3306/mutrent  # 실제 운영 DB 호스트로 변경
+    username: ${DB_USERNAME}      # 환경변수로 주입
+    password: ${DB_PASSWORD}      # 환경변수로 주입
+    driver-class-name: org.mariadb.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 30000
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        jdbc:
+          fetch_size: 100
+
+logging:
+  level:
+    root: WARN

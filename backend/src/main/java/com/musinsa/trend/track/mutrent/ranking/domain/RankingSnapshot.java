@@ -27,7 +27,7 @@ public class RankingSnapshot {
     @JoinColumn(name = "product_id", nullable = false)
     private Product product;
 
-    @Column(nullable = false)
+    @Column(name = "ranking", nullable = false)
     private Integer rank;
 
     @Column(nullable = false)

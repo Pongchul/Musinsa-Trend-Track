@@ -28,7 +28,7 @@ export const RankChange = styled.span<{ up: boolean }>`
   font-size: 11px;
   font-weight: 600;
   background: ${({ up }) => (up ? '#eff6ff' : '#fef2f2')};
-  color: ${({ up }) => (up ? '#3b82f6' : '#ef4444')};
+  color: ${({ up }) => (up ? '#ef4444' : '#3b82f6')};
   padding: 2px 6px;
   border-radius: 8px;
 `;

@@ -1,10 +1,17 @@
 import MainPage from "./pages/MainPage/MainPage.tsx";
+import { Routes, Route } from 'react-router-dom'
+import DashboardPage from "./pages/DashboardPage/DashboardPage.tsx";
+import AnalyticsPage from "./pages/AnalyticsPage/AnalyticsPage.tsx";
 
-function App() {
+const App = () => {
 
   return (
     <>
-      <MainPage />
+      <Routes>
+          <Route path="/" element={ <MainPage />} />
+          <Route path="/dashboard" element={ <DashboardPage /> } />
+          <Route path="/analytics" element={ <AnalyticsPage />} />
+      </Routes>
     </>
   )
 }

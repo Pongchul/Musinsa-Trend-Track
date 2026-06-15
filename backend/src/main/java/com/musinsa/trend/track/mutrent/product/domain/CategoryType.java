@@ -1,6 +1,7 @@
 package com.musinsa.trend.track.mutrent.product.domain;
 
-enum CategoryType {
+public enum CategoryType {
+    ALL("전체"),
     TOP("상의"),
     OUTER("아우터"),
     PANTS("바지"),

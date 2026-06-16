@@ -34,22 +34,25 @@ export const RankChange = styled.span<{ up: boolean }>`
 `;
 
 export const ProductImage = styled.div`
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
-  background: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  margin-right: 12px;
-  flex-shrink: 0;
-  overflow: hidden;
+    width: 60px;       /* 원하는 가로 크기 */
+    height: 80px;      /* 3:4 비율 */
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;     /* 잘리는 게 싫으면 contain으로 */
+        object-position: center top;  /* 상품 상단(얼굴/로고)이 잘리지 않게 */
+        display: block;
+    }
 `;
 
 export const ProductInfo = styled.div`
   flex: 1;
   min-width: 0;
+  margin: 10px;
 `;
 
 export const ProductName = styled.p`

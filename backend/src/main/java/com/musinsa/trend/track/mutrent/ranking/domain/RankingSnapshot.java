@@ -10,8 +10,8 @@ import java.time.LocalDateTime;
 @Table(name = "ranking_snapshots", indexes = {
         @Index(name = "idx_snapshot_date", columnList = "snapshotDate"),
         @Index(name = "idx_product_snapshot", columnList = "productId, snapshotDate"),
-        @Index(name = "idx_category_snapshot", columnList = "category, snapshotDate"),
-        @Index(name = "idx_rank_snapshot", columnList = "category, snapshotDate, rank")
+//        @Index(name = "idx_category_snapshot", columnList = "category, snapshotDate"),
+        @Index(name = "idx_rank_snapshot", columnList = "snapshotDate, ranking")
 })
 @Getter @Setter
 @NoArgsConstructor

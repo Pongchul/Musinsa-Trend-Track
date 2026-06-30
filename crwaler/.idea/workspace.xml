@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a9a09df-be53-4ff8-bf1a-dc5a4f5a371c" name="변경" comment="Revert &quot;Initial commit: FastAPI 크롤러 구조 분리&quot;&#10;&#10;This reverts commit 3cd2b55e">
+      <change beforePath="$PROJECT_DIR$/../backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/musinsa/trend/track/mutrent/crawler/service/RankingCrawlerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/musinsa/trend/track/mutrent/crawler/service/RankingCrawlerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/musinsa/trend/track/mutrent/product/domain/CategoryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/musinsa/trend/track/mutrent/product/domain/CategoryType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/musinsa/trend/track/mutrent/ranking/repository/RankingSnapshotRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/musinsa/trend/track/mutrent/ranking/repository/RankingSnapshotRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup_1777448178.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/crawler_service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/spring_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/state/crawl_status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/CategoryFilter/CategoryFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/CategoryFilter/CategoryFilter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/ProductRow/ProductRow.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/ProductRow/ProductRow.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/ProductRow/ProductRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/ProductRow/ProductRow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/ProductTable/ProductTable.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/ProductTable/ProductTable.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/ProductTable/ProductTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/ProductTable/ProductTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/AnalyticsPage/AnalyticsPage.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/AnalyticsPage/AnalyticsPage.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/AnalyticsPage/AnalyticsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/AnalyticsPage/AnalyticsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/MainPage/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/types/category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/types/category.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/tsconfig.app.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Pongchul"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Pongchul/Musinsa-Trend-Track.git&quot;,
+    &quot;accountId&quot;: &quot;70c80a05-e162-4767-97e5-3087cff593f6&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="37gxgWxPeyIKidCrh3aGW1nd2PR" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.crawling.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/pongchul/Desktop/mutrent/crwaler",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "AtomSettingsConfigurable"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-9626bd785c3f-87ad3c12dea2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.7132.31" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="4a9a09df-be53-4ff8-bf1a-dc5a4f5a371c" name="변경" comment="" />
+      <created>1767338626708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767338626708</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Refactoring : .idea 추가">
+      <option name="closed" value="true" />
+      <created>1782803084138</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782803084138</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Revert &quot;Initial commit: FastAPI 크롤러 구조 분리&quot;&#10;&#10;This reverts commit 3cd2b55e">
+      <option name="closed" value="true" />
+      <created>1782803472510</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782803472510</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactoring : .idea 추가" />
+    <MESSAGE value="Revert &quot;Initial commit: FastAPI 크롤러 구조 분리&quot;&#10;&#10;This reverts commit 3cd2b55e" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Initial commit: FastAPI 크롤러 구조 분리&quot;&#10;&#10;This reverts commit 3cd2b55e" />
+  </component>
+</project>

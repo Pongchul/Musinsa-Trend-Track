@@ -11,7 +11,7 @@ interface Props {
 }
 
 const categories: { label: Category; icon: ReactNode }[] = [
-    { label: 'All Categories', icon: <FaThLarge /> },
+    { label: 'All', icon: <FaThLarge /> },
     { label: 'Tops', icon: <FaTshirt /> },
     { label: 'Bottoms', icon: <GiTrousers /> },
     { label: 'Outerwear', icon: <IoShirtSharp /> },

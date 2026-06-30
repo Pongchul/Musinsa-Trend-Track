@@ -14,7 +14,8 @@ export const RankCol = styled.div`
   width: 60px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* 가로 중앙 정렬 */
+  justify-content: center; /* 세로 중앙 정렬 */
   gap: 4px;
 `;
 
@@ -39,6 +40,7 @@ export const ProductImage = styled.div`
     flex-shrink: 0;
     border-radius: 4px;
     overflow: hidden;
+    margin-left: 18px;
 
     img {
         width: 100%;

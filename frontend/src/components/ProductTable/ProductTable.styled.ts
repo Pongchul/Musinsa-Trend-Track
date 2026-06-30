@@ -35,7 +35,7 @@ export const TableHeader = styled.div`
   display: grid;
   grid-template-columns: 60px 1fr 80px 64px;
   gap: 8px;
-  padding: 0 0 8px 0;
+  padding: 0 0 8px 14px;
   border-bottom: 1px solid #eee;
 `;
 

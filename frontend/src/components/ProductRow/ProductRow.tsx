@@ -8,37 +8,38 @@ import {
     RankNum,
     Row
 } from "./ProductRow.styled.ts";
-import type {Product} from "../../types/category.ts";
 import TrendLine from "../TrendLine/TrendLine.tsx";
+import type {ProductRankingDto} from "@/apis/rankings.ts";
 
 interface Props {
-    product: Product;
+    product: ProductRankingDto;
 }
 
-
 const ProductRow = ({ product }: Props) => {
-    const isUp = product.trend === 'up';
+    const isUp = (product.rankChange ?? 0) > 0;
 
     return (
         <Row>
             <RankCol>
                 <RankNum>{product.rank}</RankNum>
                 <RankChange up={isUp}>
-                    {isUp ? '↑' : '↓'} {product.rankChange}
+                    {isUp ? '↑' : '↓'} {Math.abs(product.rankChange ?? 0)}
                 </RankChange>
             </RankCol>
 
-            <ProductImage>{product.image}</ProductImage>
+            <ProductImage>
+                <img src={product.imageUrl} alt={product.productName} />
+            </ProductImage>
 
             <ProductInfo>
-                <ProductName>{product.name}</ProductName>
-                <BrandName>{product.brand}</BrandName>
+                <ProductName>{product.productName}</ProductName>
+                <BrandName>{product.brandName}</BrandName>
             </ProductInfo>
 
-            <Price>₩{product.price.toLocaleString()}</Price>
+            <Price>₩{product.priceNumeric?.toLocaleString()}</Price>
 
             <div style={{ marginLeft: '16px' }}>
-                <TrendLine trend={product.trend} />
+                <TrendLine trend={isUp ? 'up' : 'down'} />
             </div>
         </Row>
     );

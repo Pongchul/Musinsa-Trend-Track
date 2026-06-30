@@ -5,14 +5,17 @@ import CategoryFilter from "../../components/CategoryFilter/CategoryFilter.tsx";
 import type {Category} from "../../types/category.ts";
 import {useState} from "react";
 import StatCard from "../../components/StatCard/StatCard.tsx";
-
 import { FaBolt, FaChartBar } from "react-icons/fa";
 import {FaArrowTrendUp} from "react-icons/fa6";
 import ProductTable from "../../components/ProductTable/ProductTable.tsx";
-import {coolingProducts, risingProducts} from "../../types/mockData.ts";
+import { useCoolingProducts, useRisingProducts, useMarketStats } from "@/hooks/useRankings.ts";
 
 const MainPage = () => {
-    const [selectedCategory, setSelectedCategory] = useState<Category>('All Categories');
+    const [selectedCategory, setSelectedCategory] = useState<Category>('All');
+
+    const { data: rising = [], isLoading: risingLoading } = useRisingProducts(selectedCategory);
+    const { data: cooling = [], isLoading: coolingLoading } = useCoolingProducts(selectedCategory);
+    const { data: stats } = useMarketStats();
 
     return (
         <>
@@ -28,37 +31,45 @@ const MainPage = () => {
                 </Container>
                 <StatsRow>
                     <StatCard
-                        icon={<FaArrowTrendUp />}
+                        icon={<FaArrowTrendUp/>}
                         iconBg="#eff6ff"
                         iconColor="#2563eb"
-                        badge="+12%"
+                        badge={stats?.topCategory?.changePercent != null ? `+${stats.topCategory.changePercent}%` : '-'}
                         badgeColor="#22c55e"
                         label="Top Category Today"
-                        title="Wide Denim Pants"
+                        title={stats?.topCategory?.name ?? '-'}
                     />
                     <StatCard
-                        icon={<FaBolt />}
+                        icon={<FaBolt/>}
                         iconBg="#eff6ff"
                         iconColor="#4c1d95"
-                        badge="+85%"
+                        badge={stats?.biggestMover?.changePercent != null ? `+${stats.biggestMover.changePercent}%` : '-'}
                         badgeColor="#22c55e"
                         label="Biggest Mover"
-                        title="Logo Hoodie"
-                        subtitle="#45"
+                        title={stats?.biggestMover?.name ?? '-'}
+                        subtitle={stats?.biggestMover?.rank != null ? `#${stats.biggestMover.rank}` : ''}
                     />
                     <StatCard
-                        icon={<FaChartBar />}
+                        icon={<FaChartBar/>}
                         iconBg="#fff7ed"
                         iconColor="#f97316"
                         label="Total Volume"
-                        title="12,403"
+                        title={stats?.totalVolume?.toLocaleString() ?? '-'}
                         subtitle="items"
-                        badgeRight="Last 24h"
+                        badgeRight="Last 1h"
                     />
                 </StatsRow>
                 <TablesRow>
-                    <ProductTable title="Rapidly Rising" emoji="🔥" products={risingProducts} />
-                    <ProductTable title="Cooling Down" emoji="📉" products={coolingProducts} />
+                    <ProductTable
+                        title="Rapidly Rising" emoji="🔥"
+                        products={rising}
+                        isLoading={risingLoading}
+                    />
+                    <ProductTable
+                        title="Cooling Down" emoji="📉"
+                        products={cooling}
+                        isLoading={coolingLoading}
+                    />
                 </TablesRow>
             </PageWrapper>
         </>

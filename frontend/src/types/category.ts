@@ -8,4 +8,4 @@ export interface Product {
     trend: 'up' | 'down';
 }
 
-export type Category = 'All Categories' | 'Tops' | 'Bottoms' | 'Outerwear' | 'Accessories';
+export type Category = 'All' | 'Tops' | 'Bottoms' | 'Outerwear' | 'Accessories';

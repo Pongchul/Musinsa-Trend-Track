@@ -1,11 +1,12 @@
 import {Card, Header, Section, TableHeader, TableHeaderCell, Title, ViewAll} from "./ProductTable.styled.ts";
-import type {Product} from "../../types/category.ts";
 import ProductRow from "../ProductRow/ProductRow.tsx";
+import type {ProductRankingDto} from "@/apis/rankings.ts";
 
 interface Props {
     title: string;
     emoji: string;
-    products: Product[];
+    products: ProductRankingDto[];
+    isLoading?: boolean;
 }
 
 

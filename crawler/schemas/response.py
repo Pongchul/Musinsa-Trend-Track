@@ -1,10 +1,11 @@
 from pydantic import BaseModel
 
 
-class CrawlerTriggerResponse(BaseModel):
+class CrawlerResponse(BaseModel):
     """크롤링 시작 요청에 대한 즉시 응답 (결과는 아직 모름)"""
     success: bool
     message: str
+    savedCount: int
 
 
 class RankingItem(BaseModel):
